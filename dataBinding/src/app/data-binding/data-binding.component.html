@@ -17,4 +17,39 @@
         <img src="{{ urlImage }}"/>
         <img [src]="urlImage"/>
     </article>
+
+    <article>
+        <h3>Class e Style Binding</h3>
+        <div>
+            Selecione uma classe:
+            <select #classe (change)="0">
+                <option value="alert-success">sucesso</option>
+                <option value="alert-info">info</option>
+                <option value="alert-warning">aviso</option>
+                <option value="alert-danger">perigo</option>
+            </select>
+
+            <div class="alert" role="alert" [class.alert-success]="classe.value === 'alert-success'">
+                A simple success alert—check it out!
+            </div>
+            <div class="alert" role="alert" [class.alert-info]="classe.value === 'alert-info'">
+                A simple info alert—check it out!
+            </div>
+            <div class="alert" role="alert" [class.alert-warning]="classe.value === 'alert-warning'">
+                A simple warning alert—check it out!
+            </div>
+            <div class="alert " role="alert" [class.alert-danger]="classe.value === 'alert-danger'">
+                A simple danger alert—check it out!
+            </div>
+            
+
+            <div class="alert {{classe.value}}">
+                Texto colorido de acordo com o alert
+            </div>
+
+            <div class="alert alert-info" role="alert" [style.display]="classe.value === 'alert-info' ? 'block' : 'none'">
+                Texto some se o alert for info
+            </div>
+        </div>
+    </article>
 </section>
