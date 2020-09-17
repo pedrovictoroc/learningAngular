@@ -1,0 +1,20 @@
+<section class="property-binding">
+
+    <article>
+        <h3>Interpolação</h3>
+        <p>String renderizada com Interpolação: {{ url }}</p>
+        <p>Resultado de 1+9 é: {{getValor()}}</p>
+    </article>
+    
+    <article>
+        <h3>Modificando estados</h3>
+        <button (click)="setVoted()">Clique para votar</button>
+        <p>{{getState()}}</p>
+    </article>
+
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{ urlImage }}"/>
+        <img [src]="urlImage"/>
+    </article>
+</section>
