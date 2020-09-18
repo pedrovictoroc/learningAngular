@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dataBinding';
+  value:number = 5;
+  shouldDestroy:boolean = false;
+
+  changeValue(){
+    this.value = this.value + 1
+  }
+
+  destroyCycle(){
+    this.shouldDestroy = !this.shouldDestroy
+  }
 }

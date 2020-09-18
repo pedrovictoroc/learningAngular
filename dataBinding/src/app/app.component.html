@@ -1,4 +1,6 @@
-<app-data-binding></app-data-binding>
-
+<!--<app-data-binding></app-data-binding>-->
+<app-life-cycle [value]="value" *ngIf="!shouldDestroy"></app-life-cycle>
+<button (click)="changeValue()">Clique aqui</button>
+<button (click)="destroyCycle()">Destruir</button>
 
 <router-outlet></router-outlet>
