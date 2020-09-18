@@ -53,3 +53,32 @@
         </div>
     </article>
 </section>
+
+<h1> Event Binding </h1>
+
+<section class="event-binding">
+
+    <div>
+        <button (click)="clickedButton()"
+                class="btn btn-primary">
+            clique
+        </button>
+    </div>
+    <br>
+
+    <p>Valor digitado: {{content}}</p>
+    <p>Status de save: {{saved}}</p>
+    <input  (keyup)="textChanged($event.target.value)"
+            (keyup.enter)="saveValue()"
+            (blur)="saveValue()"
+            placeholder="digite algo"
+    />
+    <br>
+    <br>
+
+    <p  (mouseenter)="onFocused()"
+        (mouseleave)="onFocused()"
+        [style.color]=style>
+        Passe o mouse por cima
+    </p>
+</section>
