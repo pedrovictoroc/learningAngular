@@ -20,6 +20,7 @@ export class DataBindingComponent implements OnInit {
   */
   style:string= "blue"
 
+  nomeCurso:string = "java crash course"
 
   constructor() { }
 
