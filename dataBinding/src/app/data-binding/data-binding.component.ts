@@ -1,4 +1,3 @@
-import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,7 +10,8 @@ export class DataBindingComponent implements OnInit {
   url:string = "https://loiane.training/"
   voted:boolean = false
   urlImage:string = "http://lorempixel.com/400/200/nature"
-  content:any = ""
+
+  content:string = ""
   saved:boolean = false
   /*
   styleRed:string = "red"
@@ -19,6 +19,7 @@ export class DataBindingComponent implements OnInit {
   focused:boolean = false
   */
   style:string= "blue"
+
 
   constructor() { }
 

@@ -71,6 +71,7 @@
     <input  (keyup)="textChanged($event.target.value)"
             (keyup.enter)="saveValue()"
             (blur)="saveValue()"
+            [value]=content
             placeholder="digite algo"
     />
     <br>
@@ -82,3 +83,5 @@
         Passe o mouse por cima
     </p>
 </section>
+
+<app-meu-form></app-meu-form>

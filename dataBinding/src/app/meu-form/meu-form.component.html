@@ -1,0 +1,14 @@
+
+<h1> Two-Way databinding </h1>
+
+<section>
+    <p>Dado com TwoWayDataBinding: {{twoWayDataBindingContent}}</p>
+    <input [(ngModel)]="twoWayDataBindingContent"/>
+
+
+    <div>
+        <p>Nome: {{user.name}} || idade: {{user.age}}</p>
+        <input type="text" [(ngModel)]="user.name"/>
+        <input type="number" [(ngModel)]="user.age"/>
+    </div>
+</section>
