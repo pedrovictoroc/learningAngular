@@ -20,7 +20,12 @@ export class DataBindingComponent implements OnInit {
   */
   style:string= "blue"
 
-  nomeCurso:string = "java crash course"
+  nomeCursos:string[] = ["java crash course","angular for noobs", "JavaScript zero to hero"]
+
+  initialValue:number = 20
+
+  newValue:number = this.initialValue
+  type:string = ""
 
   constructor() { }
 
@@ -51,6 +56,13 @@ export class DataBindingComponent implements OnInit {
 
   onFocused(){
     this.style = (this.style === "blue" ? "red" : "blue")
+  }
+
+  onChangeValue(event){
+    this.newValue = event.newValue
+    this.type = event.typeOperation
+
+    console.log(this.newValue,this.type) 
   }
 
   ngOnInit() {

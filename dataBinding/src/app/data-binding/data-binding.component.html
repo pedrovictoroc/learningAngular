@@ -88,10 +88,15 @@
 
 <section class="input-output-properties">
     <h1>Input/Output properties</h1>
-    <article>
+    <article *ngFor="let curso of nomeCursos">
 
-        <app-curso [nome]="nomeCurso">
-        </app-curso>
-    
+        <app-curso [nome]="curso">
+        </app-curso>    
     </article>
+
+    <p>Mais novo valor: {{newValue}}</p>
+    <p>Ultima operação feita: {{type}}</p>
+    <contador [value]="initialValue"
+                (changed)="onChangeValue($event)">
+    </contador>
 </section>
