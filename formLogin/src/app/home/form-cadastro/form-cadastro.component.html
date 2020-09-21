@@ -1,0 +1,19 @@
+<div style="display: flex;
+            flex-direction: column;">
+
+    <input placeholder="Usuário"
+            [(ngModel)]="createUser.userName"/>
+
+    <input placeholder="Senha"
+            type="password"
+            [(ngModel)]="createUser.password"/>
+    <input placeholder="Confirme senha"
+            type="password"
+            [(ngModel)]="createUser.confirmPassword"/>
+
+    <button (click)="debug()">
+        Enviar!
+    </button>
+    
+
+</div>

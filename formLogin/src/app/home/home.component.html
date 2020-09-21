@@ -1,0 +1,32 @@
+<div style="display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            height: 50vh;">
+
+    <h1>Seja Bem Vindo</h1>
+
+    <button (click)="onChangeLoginVisibility()">
+        trocar
+    </button>
+    
+    <form-login *ngIf="getShouldShowLoginVisibility()"
+                style=" display: flex;
+                        height: 100%;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;">
+    
+    </form-login>
+    
+    <form-cadastro *ngIf="!getShouldShowLoginVisibility()"
+                    style=" display: flex;
+                    height: 100%;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;">
+
+    </form-cadastro>
+    
+</div>

@@ -1,0 +1,20 @@
+<div style="display: flex;
+            flex-direction: column;">
+
+    <input placeholder="Usuário"
+            [(ngModel)]="user.userName"/>
+
+    <input placeholder="Senha"
+            [type]="shouldShowPassword ? 'text' : 'password'"
+            [(ngModel)]="user.password"/>
+
+    <button (click)="changeShouldShowPassword()">
+        ver senha!
+    </button>
+
+    <button>
+        Enviar!
+    </button>
+    
+
+</div>
