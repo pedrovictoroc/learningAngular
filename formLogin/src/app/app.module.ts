@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FormCadastroComponent } from './home/form-cadastro/form-cadastro.component';
 import { FormLoginComponent } from './home/form-login/form-login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ListAPIComponent } from './home/list-api/list-api.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FormCadastroComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    ListAPIComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
