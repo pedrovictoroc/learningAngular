@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "stormsamurai1",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "username": "stormsamurai2",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "username": "stormsamurai3",
+      "password": "1234"
+    },
+    {
+      "id": 4,
+      "username": "stormsamurai4",
+      "password": "1234"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "nome": "Angular for noobs",
+      "description": "angular"
+    },
+    {
+      "id": 2,
+      "nome": "JavaScript for webDev",
+      "description": "javascript"
+    },
+    {
+      "id": 3,
+      "nome": "Java for legacy driven development",
+      "description": "java"
+    },
+    {
+      "id": 4,
+      "nome": "Rust for cool guys",
+      "description": "rust"
+    }
+  ]
+}
